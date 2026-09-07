@@ -1,0 +1,11 @@
+[package]
+name        = "rambudget"
+version     = "0.1.0"
+edition     = "2024"
+description = "Byte-accounted, budget-enforced in-memory store: admission control that degrades by policy, not by OOM."
+
+[dependencies]
+dashmap = "6"
+
+[lints.rust]
+unsafe_code = "forbid"
