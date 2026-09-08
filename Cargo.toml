@@ -1,0 +1,16 @@
+[package]
+name        = "rambudget"
+version     = "0.1.0"
+edition     = "2024"
+license     = "MIT"
+description = "Byte-accounted, budget-enforced in-memory store: admission control that degrades by policy, not by OOM."
+repository  = "https://github.com/grep999/rambudget"
+keywords    = ["memory", "cache", "budget", "backpressure", "oom"]
+categories  = ["data-structures", "memory-management"]
+
+[dependencies]
+dashmap = "6"
+ahash   = "0.8"
+
+[lints.rust]
+unsafe_code = "forbid"
